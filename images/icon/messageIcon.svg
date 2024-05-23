@@ -1,0 +1,6 @@
+<svg id="message" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <rect id="message_Frame_Background_" data-name="message [Frame Background]" width="38" height="38" fill="none"/>
+  <path id="Vector_409_Stroke_" data-name="Vector 409 (Stroke)" d="M0,1.583A1.583,1.583,0,0,1,1.583,0H14.25a1.583,1.583,0,1,1,0,3.167H1.583A1.583,1.583,0,0,1,0,1.583Z" transform="translate(11.083 12.667)" fill="#fff" fill-rule="evenodd"/>
+  <path id="Vector_410_Stroke_" data-name="Vector 410 (Stroke)" d="M0,1.583A1.583,1.583,0,0,1,1.583,0H7.917a1.583,1.583,0,1,1,0,3.167H1.583A1.583,1.583,0,0,1,0,1.583Z" transform="translate(11.083 19)" fill="#fff" fill-rule="evenodd"/>
+  <path id="Rectangle_192_Stroke_" data-name="Rectangle 192 (Stroke)" d="M7.473,22.9A3.167,3.167,0,0,1,9.5,22.167H26.917A1.583,1.583,0,0,0,28.5,20.583V4.75a1.583,1.583,0,0,0-1.583-1.583H4.75A1.583,1.583,0,0,0,3.167,4.75V26.489ZM5.194,28.922A3.167,3.167,0,0,1,0,26.489V4.75A4.75,4.75,0,0,1,4.75,0H26.917a4.75,4.75,0,0,1,4.75,4.75V20.583a4.75,4.75,0,0,1-4.75,4.75H9.5Z" transform="translate(3.167 4.75)" fill="#fff" fill-rule="evenodd"/>
+</svg>

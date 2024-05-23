@@ -1,0 +1,34 @@
+{
+  "en": {
+    "header-txt": "Let’s Build Something <br/> amazing with GPT-3 <br/> OpenAI",
+    "header-txt-2": "Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party years to order allow asked of.",
+    "item-menu-1": "Home",
+    "item-menu-2": "What is GPT?",
+    "item-menu-3": "Articles",
+    "item-menu-4": "Library",
+    "login": "sing in",
+    "sing-up": "sing up",
+    "input-txt": "Your Email Address",
+    "btn-input": "Get Started",
+    "en" : "en",
+    "fa" : "fa",
+    "themeDark" : "Dark",
+    "themeLight" : "Light"
+  },
+  "fa": {
+    "header-txt": "بیایید با چت جی پی تی <br> یک کار شگفت انگیز<br>انجام دهیم",
+    "header-txt-2": "ما با این ربات تصاویر سه بعدی بسیار نزدیک به طبیعت را خلق میکنیم و آن ها را در یکی از شبکه های اجتماعی پرطرفدار به اشتراک می گذاریم امیدوارم که از نتایج باز خوردها شگفت زده شوید",
+    "item-menu-1": "صفحه اصلی",
+    "item-menu-2": "جی پی تی چیست ؟",
+    "item-menu-3": "مقالات",
+    "item-menu-4": "کتابخانه",
+    "login": "ورود",
+    "sing-up": "ثبت نام",
+    "input-txt": "آدرس ایمیل شما",
+    "btn-input": "شروع کنید",
+    "en" : "انگلیسی",
+    "fa": "فارسی",
+    "themeDark" : "تاریک",
+    "themeLight" : "روشن"
+  }
+}

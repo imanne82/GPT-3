@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="text-[10px] xl:text-[9px] smx:text-[7px]">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="./css/output.css"/>
+    <title>GPT-3</title>
+    <link type="web icon" rel="icon" href="images/img/headerImg.svg"/>
+</head>
+
+<body class="dark:bg-body_bg w-full min-h-[100vh] text-[1.6rem] transition ease-in-out delay-100 ">
+<div class="container">
+    <header class="flex flex-col">
+        <nav class="flex relative justify-between items-center pt-[2rem] text-[#000] dark:text-white">
+            <h1 class="font-bold text-[3rem]">GPT-3</h1>
+            <ul class="flex lg:hidden">
+                <li class="mr-[3rem]"><a class="lang" data-lang="item-menu-1" href="#">Home</a></li>
+                <li class="mr-[3rem]"><a class="lang" data-lang="item-menu-2" href="#">What is GPT?</a></li>
+                <li class="mr-[3rem]"><a class="lang" data-lang="item-menu-3" href="#">Articles</a></li>
+                <li><a class="lang" data-lang="item-menu-4" href="#">Library</a></li>
+            </ul>
+            <div class="flex items-center lg:hidden">
+                <label class="mr-[2rem] relative inline-flex items-center cursor-pointer">
+                    <input class="sr-only peer" value="" id="change-theme" type="checkbox"/>
+                    <div class="w-24 h-12 rounded-[8px] ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️'] before:absolute before:h-10 before:w-10 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full peer-checked:shadow-gray-700 peer-checked:bg-color_input after:content-['🌑'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-[4px] after:right-1 after:translate-y-full after:w-10 after:h-10 after:opacity-0 after:transition-all after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0"></div>
+                </label>
+                <label for="selectLang"></label>
+                <select id="selectLang"
+                        class=" h-[3rem] dark:bg-color_input bg-gray-200 py-[2px] outline-none px-[8px] dark:text-white rounded-[8px]">
+                    <option class="lang" data-lang="en" value="en">en</option>
+                    <option class="lang" data-lang="fa" value="fa">fa</option>
+                </select>
+                <a data-lang="login" class="lang mr-[1rem] text-btnColor py-[1rem] px-[3rem] " href="#">Sing in</a>
+                <a data-lang="sing-up" class="lang rounded-[8px] text-white bg-btnColor py-[1rem] px-[3rem]" href="#">Sing
+                    up</a>
+            </div>
+            <div id="menuBtn" class=" hidden lg:flex flex-col">
+                <span class="w-[25px] h-[2px] mt-[-.5rem] bg-black dark:bg-white"></span>
+                <span class="w-[25px] h-[2px] mt-[.5rem] bg-black dark:bg-white"></span>
+                <span class="w-[25px] h-[2px] mt-[.5rem] bg-black dark:bg-white"></span>
+            </div>
+            <div id="menu"
+                 class="hidden flex-col items-center absolute top-0 backdrop-blur-[5px] bg-b min-h-dvh w-full z-10">
+                <div class="w-[70%]">
+                    <button id="clsBtn"
+                            class="mt-[2rem] w-full bg-red-600 rounded-[8px] text-white text-[5rem]">
+                        X
+                    </button>
+                    <ul class="flex flex-col text-[3rem] *:text-white *:dark:text-black ">
+                        <li class=" dark:text-text_blue mt-[2rem] p-[8px] bg-color_input rounded-[8px] "><a
+                                class="lang"
+                                data-lang="item-menu-1"
+                                href="#">Home</a></li>
+                        <li class=" dark:text-text_blue mt-[2rem] p-[8px] bg-color_input rounded-[8px] "><a
+                                class="lang"
+                                data-lang="item-menu-2"
+                                href="#">What is GPT?</a></li>
+                        <li class=" dark:text-text_blue mt-[2rem] p-[8px] bg-color_input rounded-[8px] "><a
+                                class="lang"
+                                data-lang="item-menu-3"
+                                href="#">Articles</a>
+                        </li>
+                        <li class="mt-[2rem]  dark:text-text_blue p-[8px] bg-color_input rounded-[8px] "><a
+                                class="lang"
+                                data-lang="item-menu-4"
+                                href="#">Library</a></li>
+                    </ul>
+                    <div class="flex flex-col *:text-[3rem] ">
+                        <a data-lang="login" class="lang mt-[2rem] text-white rounded-[8px] bg-btnColor p-[8px]" href="#">Sing
+                            in</a>
+                        <a data-lang="sing-up" class="lang mt-[2rem] dark:text-text_blue text-white p-[8px] bg-color_input rounded-[8px]"
+                           href="#">Sing
+                            up</a>
+                        <button id="changeTheme"
+                                class="w-full bg-black dark:bg-white dark:text-black text-white rounded-[8px] mt-[2rem] py-[8px]">
+                        </button>
+                    </div>
+                    <label for="selectLang-2"></label>
+                    <select id="selectLang-2"
+                            class=" w-full text-[3rem] mt-[2rem] mb-[2rem] dark:bg-color_input bg-gray-200 py-[8px] outline-none dark:text-white rounded-[8px]">
+                        <option class="lang" data-lang="en" value="en">en</option>
+                        <option class="lang" data-lang="fa" value="fa">fa</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+        <div class="grid grid-cols-2 text-[#000] dark:text-white w-full lg:grid-cols-1">
+            <div>
+                <h1 data-lang="header-txt"
+                    class="lang font-bold header__text mt-[6rem] text-[5.2rem] lg:m-0 lg:text-[4.5rem] smx:text-[4rem]">
+                    Let’s Build Something <br/>
+                    amazing with GPT-3 <br/>
+                    OpenAI
+                </h1>
+
+                <p data-lang="header-txt-2"
+                   class="lang mt-[2rem] text-[2rem] text-text_blue lg:w-[70%] md:w-[100%] xl:text-[1.9rem]">
+                    Yet bed any for travelling assistance indulgence unpleasing. Not
+                    thoughts all exercise blessing. Indulgence way everything joy
+                    alteration boisterous the attachment. Party years to order allow
+                    asked of.
+                </p>
+                <div class="mt-[3rem] mb-[2rem] flex justify-between">
+                    <label for="input"></label>
+                    <input id="input"
+                           class=" lang peer outline-none w-[60%] text-[2rem] py-[1rem] pl-[3rem] rounded-l-[5px] bg-[#101010f9] dark:bg-color_input text-white "
+                           type="text"
+                           data-lang="input-txt"
+                           placeholder="Your Email Address"/>
+
+                    <button data-lang="btn-input"
+                            class="lang btn__get peer-focus:opacity-100 opacity-50 text-[2rem] w-[40%] rounded-[8px] rounded-l-none text-white bg-btnColor py-[1rem] px-[3rem] smx:text-[1.8rem]">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            <div class="relative flex justify-end lg:row-start-1 lg:row-end-2 lg:justify-center">
+                <div class="absolute z-[-1] filter blur-[30px] top-[25%] right-[21%] bg-[#0F6BCD] w-[320px] h-[320px] rounded-[50%] lg:hidden">
+                </div>
+                <img class="w-[67rem] h-[66rem]" src="images/img/headerImg.svg" alt="img" loading="lazy"/>
+            </div>
+        </div>
+    </header>
+
+</div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

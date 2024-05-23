@@ -82,9 +82,17 @@ function langHandler(lang) {
 
 function setLanguage() {
     let language = localStorage.getItem('lang')
-    selectLang.value = language
-    selectLangTow.value = language
-    langHandler(language)
+    if (language !== null) {
+        console.log(language)
+        selectLang.value = language
+        selectLangTow.value = language
+        langHandler(language)
+    } else {
+        language = 'en'
+        selectLang.value = language
+        selectLangTow.value = language
+        langHandler(language)
+    }
 }
 
 window.addEventListener('load', setLanguage)
